@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
 import Logo from "../assets/logo-mobile.svg";
-import logo2 from "../assets/gem-logo.svg";
+import logo1 from "../assets/gem-logo.svg";
+import logo2 from "../assets/gem-logo-dark.svg";
 import iconDown from "../assets/icon-chevron-down.svg";
 import iconUp from "../assets/icon-chevron-up.svg";
 import elipsis from "../assets/icon-vertical-ellipsis.svg";
@@ -11,6 +13,7 @@ import AddEditBoardModal from "../modals/AddEditBoardModal";
 import AddEditTaskModal from "../modals/AddEditTaskModal";
 import DeleteModal from "../modals/DeleteModal";
 import boardSlice from "../redux/boardSlice";
+import axios from "axios";
 
 function Header({ setIsBoardModalOpen, isBoardModalOpen }) {
   const [openDropdown, setOpenDropdown] = useState(false);
@@ -23,6 +26,17 @@ function Header({ setIsBoardModalOpen, isBoardModalOpen }) {
 
   const boards = useSelector((state) => state.boards);
   const board = boards.find((board) => board.isActive);
+
+  // Access and View Data from json file----------------------------------------------
+  const [boardsData, setBoardsData] = useState([]);
+
+  useEffect(() => {
+    axios.get("  http://localhost:3001/boards").then((response) => {
+      setBoardsData(response.data);
+    });
+  }, []);
+
+  // ------------------------------------------------------------------------------------
 
   const onDropdownClick = () => {
     setOpenDropdown((state) => !state);
@@ -50,7 +64,7 @@ function Header({ setIsBoardModalOpen, isBoardModalOpen }) {
   };
 
   return (
-    <div className=" p-4 fixed left-0 bg-white dark:bg-[#2b2c37] z-50 right-0 ">
+    <div className=" p-4 fixed left-0 bg-white dark:bg-[#001C40] z-50 right-0 ">
       <header className=" flex justify-between dark:text-white items-center  ">
         {/* Left Side  */}
         <div className=" flex items-center space-x-2  md:space-x-4">

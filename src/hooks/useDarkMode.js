@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import logo1 from "../assets/gem-logo.svg";
+import logo2 from "../assets/gem-logo-dark.svg";
 
 function useDarkMode() {
   const [theme, setTheme] = useState(localStorage.theme);
