@@ -1,14 +1,15 @@
 {
   "boards": [
     {
-      "name": "Platform Launch",
+      "index": 1,
+      "name": "Task Manager Project",
       "isActive": true,
       "columns": [
         {
           "name": "Todo",
           "tasks": [
             {
-              "title": "Build UI for onboarding flow",
+              "title": "Build UI for initial interface",
               "description": "",
               "status": "Todo",
               "subtasks": [
@@ -27,7 +28,7 @@
               ]
             },
             {
-              "title": "Build UI for search",
+              "title": "Build UI for header",
               "description": "",
               "status": "Todo",
               "subtasks": [
@@ -38,7 +39,7 @@
               ]
             },
             {
-              "title": "Build settings UI",
+              "title": "Build dark mode toggle",
               "description": "",
               "status": "Todo",
               "subtasks": [
@@ -73,20 +74,20 @@
           "name": "Doing",
           "tasks": [
             {
-              "title": "Design settings and search pages",
+              "title": "Design settings",
               "description": "",
               "status": "Doing",
               "subtasks": [
                 {
-                  "title": "Settings - Account page",
+                  "title": "Task page",
                   "isCompleted": true
                 },
                 {
-                  "title": "Settings - Billing page",
+                  "title": "Board page",
                   "isCompleted": true
                 },
                 {
-                  "title": "Search page",
+                  "title": "Edit modal",
                   "isCompleted": false
                 }
               ]
@@ -285,13 +286,14 @@
       ]
     },
     {
-      "name": "Marketing Plan",
+      "indexd": 2,
+      "name": "Web Application App",
       "columns": [
         {
           "name": "Todo",
           "tasks": [
             {
-              "title": "Plan Product Hunt launch",
+              "title": "Plan Design",
               "description": "",
               "status": "Todo",
               "subtasks": [
@@ -322,7 +324,7 @@
               ]
             },
             {
-              "title": "Share on Show HN",
+              "title": "Create the Design draft",
               "description": "",
               "status": "",
               "subtasks": [
@@ -376,13 +378,14 @@
       ]
     },
     {
-      "name": "Roadmap",
+      "id": 3,
+      "name": "Phonebook App",
       "columns": [
         {
           "name": "Now",
           "tasks": [
             {
-              "title": "Launch version one",
+              "title": "Create database for the phonebook",
               "description": "",
               "status": "",
               "subtasks": [
@@ -397,7 +400,7 @@
               ]
             },
             {
-              "title": "Review early feedback and plan next steps for roadmap",
+              "title": "Create the phonebook interface",
               "description": "Beyond the initial launch, we're keeping the initial roadmap completely empty. This meeting will help us plan out our next steps based on actual customer feedback.",
               "status": "",
               "subtasks": [

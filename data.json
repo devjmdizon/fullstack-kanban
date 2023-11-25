@@ -2,14 +2,14 @@
   "boards": [
     {
       "index": 1,
-      "name": "Platform Launch",
+      "name": "Task Manager Project",
       "isActive": true,
       "columns": [
         {
           "name": "Todo",
           "tasks": [
             {
-              "title": "Build UI for onboarding flow",
+              "title": "Build UI for initial interface",
               "description": "",
               "status": "Todo",
               "subtasks": [
@@ -28,7 +28,7 @@
               ]
             },
             {
-              "title": "Build UI for search",
+              "title": "Build UI for header",
               "description": "",
               "status": "Todo",
               "subtasks": [
@@ -39,7 +39,7 @@
               ]
             },
             {
-              "title": "Build settings UI",
+              "title": "Build dark mode toggle",
               "description": "",
               "status": "Todo",
               "subtasks": [
@@ -74,20 +74,20 @@
           "name": "Doing",
           "tasks": [
             {
-              "title": "Design settings and search pages",
+              "title": "Design settings",
               "description": "",
               "status": "Doing",
               "subtasks": [
                 {
-                  "title": "Settings - Account page",
+                  "title": "Task page",
                   "isCompleted": true
                 },
                 {
-                  "title": "Settings - Billing page",
+                  "title": "Board page",
                   "isCompleted": true
                 },
                 {
-                  "title": "Search page",
+                  "title": "Edit modal",
                   "isCompleted": false
                 }
               ]
